@@ -1,0 +1,52 @@
+@import './colors';
+@import './variables';
+
+html, body {
+  padding: 0;
+  margin: 0;
+  color: $color-font;
+  background-color: $color-body-background2;
+  background: linear-gradient(0deg, $color-body-background1 0%, $color-body-background2 100%);
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 微軟正黑體,"Microsoft JhengHei","Microsoft JhengHei UI","Microsoft YaHei","Microsoft YaHei UI","PingFang TC","Lantinghei TC","Heiti TC","Apple LiGothic","PMingLiU",Arial,sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // min-width: $gundam-width + ($gundam-padding * 2);
+  min-height: $gundam-height + ($gundam-padding * 2);
+}
+
+#app {
+  margin: auto;
+  min-width: 320px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 0; /* fix flex child overflow issue */
+  text-align: center;
+}
+
+.container {
+  width: $gundam-width;
+  height: $gundam-height;
+  padding: $gundam-padding;
+  margin: auto;
+}
+
+@media (max-width: $gundam-width) {
+  .container {
+    width: $gundam-width * $gundam-resize-scale;
+    height: $gundam-height * $gundam-resize-scale;
+    padding: $gundam-padding * $gundam-resize-scale;
+
+    & > div {
+      transform: scale($gundam-resize-scale);
+      transform-origin: top left;
+    }
+  }
+}

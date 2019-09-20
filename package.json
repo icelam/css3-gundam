@@ -1,0 +1,61 @@
+{
+  "name": "css3-gundam",
+  "version": "1.0.0",
+  "description": "Draw Gundam (RX-78-2) using CSS3 only. Recommended browser: Chrome, Firefox, IE10+, Safari.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack/webpack.prod.conf.js  --colors",
+    "dev": "webpack-dev-server --open --config webpack/webpack.dev.conf.js"
+  },
+  "author": "Ice Lam",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "autoprefixer": "^9.4.10",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "dotenv": "^8.1.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.16.0",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-variables-plugin": "^1.0.0",
+    "html-webpack-plugin": "^4.0.0-beta.2",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.9.4",
+    "postcss-loader": "^3.0.0",
+    "pug": "^2.0.4",
+    "pug-html-loader": "^1.1.5",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.28.1",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.11",
+    "webpack-merge": "^4.1.4",
+    "workbox-webpack-plugin": "^4.1.0"
+  },
+  "dependencies": {
+    "core-js": "^3.0.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "last 2 versions",
+    "not dead",
+    "ie 9",
+    "ie 10",
+    "ie 11",
+    "firefox 15",
+    "opera 12"
+  ]
+}

@@ -1,0 +1,18 @@
+// Gundam width and height
+$gundam-width: 408px;
+$gundam-height: 345px;
+$gundam-padding: 30px;
+$gundam-resize-scale: 320px / ($gundam-width + ($gundam-padding * 2));
+
+// z-index
+$zindex-antenna: 400;
+$zindex-antenna-holder-bottom: 450;
+$zindex-antenna-holder-top: 500;
+$zindex-forehead: 300;
+$zindex-vulcan-cannon: 350;
+$zindex-eye: 50;
+$zindex-chin: 100;
+$zindex-goatee: 150;
+$zindex-ear: 200;
+$zindex-back-head: 1;
+$zindex-top-head: 250;

@@ -1,0 +1,1754 @@
+@import './colors';
+@import './_variables';
+
+.gundam {
+  position: relative;
+
+  div {
+    position: absolute;
+  }
+}
+
+.antenna {
+  left: 68px;
+  top: 74px;
+  z-index: $zindex-antenna;
+
+  &--right {
+    transform: scaleX(-1);
+    left: 340px;
+  }
+
+  &-part1 {
+    width: 139px;
+    height: 96px;
+    top: 0;
+    left: 0;
+    border-bottom: 7px solid $color-gundam-border;
+    border-left: 7px solid $color-gundam-border;
+    transform: matrix(1.14, 0.83, -1.11, -0.52, 0, 0);
+    background: $color-gundam-white;
+    background: linear-gradient(40deg, $color-gundam-white 54%, transparent 54%);
+    background-clip: content-box;
+    z-index: $zindex-antenna + 1;
+  }
+
+  &-part2 {
+    width: 13px;
+    height: 3px;
+    top: 23px;
+    left: 45px;
+    border-right: 4px solid $color-gundam-border;
+    border-top: 1px solid $color-gundam-border;
+    transform: matrix(0.53, 0.25, 1, 2.6, 0, 0);
+    z-index: $zindex-antenna + 2;
+  }
+
+  &-part3 {
+    width: 126px;
+    height: 9px;
+    top: 52px;
+    left: 28px;
+    border-top: 1px solid $color-gundam-border;
+    transform: matrix(0.45, 0.25, 1.15, 2.5, 0, 0);
+    z-index: $zindex-antenna + 5;
+  }
+
+  &-part4 {
+    width: 122px;
+    height: 8px;
+    top: 46px;
+    left: 30px;
+    border-top: 1px solid $color-gundam-border;
+    transform: matrix(0.5, 0.25, 1.15, 2.5, 0, 0);
+    z-index: $zindex-antenna + 6;
+  }
+
+  &-part5 {
+    width: 122px;
+    height: 8px;
+    top: 47px;
+    left: 31px;
+    transform: matrix(0.5, 0.26, 1.15, 2.5, 0, 0);
+    background-color: $color-gundam-white-shadow;
+    z-index: $zindex-antenna + 3;
+  }
+
+  &-part6 {
+    width: 122px;
+    height: 8px;
+    top: 53px;
+    left: 31px;
+    transform: matrix(0.5, 0.26, 1.15, 2.5, 0, 0);
+    background: $color-gundam-white;
+    z-index: $zindex-antenna + 4;
+  }
+
+  &-part7 {
+    width: 25px;
+    height: 7px;
+    top: 51px;
+    left: 72px;
+    border-left: 5px solid $color-gundam-border;
+    border-bottom: 1px solid $color-gundam-border;
+    transform: matrix(0.52, 0.35, 1.4, 2.8, 0, 0);
+    z-index: $zindex-antenna + 8;
+  }
+
+  &-part8 {
+    width: 21px;
+    height: 9px;
+    top: 71px;
+    left: 87px;
+    border-top: 3px solid $color-gundam-border;
+    border-right: 3px solid $color-gundam-border;
+    transform: matrix(0.35, 0.95, -0.8, -0.6, 0, 0);
+    background-color: $color-gundam-white;
+    z-index: $zindex-antenna + 7;
+  }
+
+  &-part9 {
+    width: 112px;
+    height: 12px;
+    top: 67px;
+    left: 42px;
+    transform: matrix(0.35, 0.26, 1.15, 2.5, 0, 0);
+    background: $color-gundam-white;
+    background: linear-gradient(168deg, transparent 45%, $color-gundam-white 45%, $color-gundam-white 69%, transparent 69%);
+    z-index: $zindex-antenna + 0;
+  }
+}
+
+.antenna-holder {
+  top: 118px;
+  left: 170px;
+
+  &-top {
+    &-half {
+      top: 0;
+      left: 0;
+      z-index: $zindex-antenna-holder-top;
+
+      &--right {
+        transform: scaleX(-1);
+        left: 68px;
+      }
+
+      &-part1 {
+        width: 26px;
+        height: 25px;
+        top: 23px;
+        left: 11px;
+        border-left: 2px solid $color-gundam-border;
+        border-bottom: 2px solid $color-gundam-border;
+        transform: matrix(0.73, 0.68, -0.16, 1.30, 0, 0);
+        background-color: $color-gundam-red;
+        z-index: $zindex-antenna-holder-top + 2;
+      }
+
+      &-part2 {
+        width: 1px;
+        height: 16px;
+        top: 7px;
+        left: 15px;
+        border-left: 3px solid $color-gundam-border;
+        border-top: 4px solid $color-gundam-border;
+        transform: matrix(0.75, -1.5, -0.135, 1.1, 0, 0.7);
+        background-color: $color-gundam-red;
+        z-index: $zindex-antenna-holder-top + 3;
+      }
+
+      &-part3 {
+        width: 6px;
+        height: 5px;
+        top: 4px;
+        left: 18px;
+        border-left: 2px solid $color-gundam-border;
+        border-top: 2px solid $color-gundam-border;
+        transform: matrix(1.00, 0.00, -0.45, 1.00, 0.2, -0.8);
+        background-color: $color-gundam-red;
+        z-index: $zindex-antenna-holder-top + 4;
+      }
+
+      &-part4 {
+        width: 6px;
+        height: 5px;
+        top: 3px;
+        left: 22px;
+        border-right: 2px solid $color-gundam-border;
+        border-top: 2px solid $color-gundam-border;
+        background-color: $color-gundam-red;
+        transform: matrix(1, 0, 0, 1, 0, 0.2);
+        z-index: $zindex-antenna-holder-top + 5;
+      }
+
+      &-part5 {
+        width: 5px;
+        height: 8px;
+        top: 3px;
+        left: 28px;
+        border-left: 2px solid $color-gundam-border;
+        border-bottom: 2px solid $color-gundam-border;
+        background-color: $color-gundam-red-shadow;
+        transform: matrix(1, 0, 0, 1, 0, 0.2);
+        z-index: $zindex-antenna-holder-top + 5;
+      }
+
+      &-part6 {
+        width: 17px;
+        height: 20px;
+        top: 10px;
+        left: 18px;
+        background-color: $color-gundam-red;
+        z-index: $zindex-antenna-holder-top + 1;
+      }
+    }
+
+    &-corner {
+      width: 26px;
+      height: 26px;
+      top: 30px;
+      left: 21px;
+      border-left: 2px solid $color-gundam-border;
+      border-bottom: 2px solid $color-gundam-border;
+      transform: matrix(0.76, -0.7, 0.76, 0.7, -1, 0.8);
+      background-color: $color-gundam-red;
+      z-index: $zindex-antenna-holder-top + 7;
+    }
+
+    &-middle {
+      height: 16px;
+      top: 40px;
+      left: 33px;
+      border-left: 2px solid $color-gundam-border;
+      z-index: $zindex-antenna-holder-top + 8;
+    }
+  }
+
+  &-bottom {
+    &-half {
+      top: 0;
+      left: -2px;
+      z-index: $zindex-antenna-holder-bottom;
+
+      &--right {
+        transform: scaleX(-1);
+        left: 70px;
+      }
+
+      &-part1 {
+        width: 46px;
+        height: 22px;
+        top: 45px;
+        left: 0;
+        border-left: 2px solid $color-gundam-border;
+        border-bottom: 2px solid $color-gundam-border;
+        transform: matrix(0.64, 0.79, -0.35, 1.02, 0, 0);
+        background-color: $color-gundam-red-shadow;
+        z-index: $zindex-antenna-holder-bottom + 2;
+      }
+
+      &-part2 {
+        width: 3px;
+        height: 21px;
+        top: 3px;
+        left: 12px;
+        border-left: 2px solid $color-gundam-border;
+        border-top: 3px solid $color-gundam-border;
+        transform: matrix(0.91, -1.05, -0.04, 1.01, 0.5, 0);
+        background-color: $color-gundam-red-shadow;
+        z-index: $zindex-antenna-holder-bottom + 3;
+      }
+
+      &-part3 {
+        width: 16px;
+        height: 4px;
+        top: 0;
+        left: 17px;
+        border-left: 2px solid $color-gundam-border;
+        border-top: 2px solid $color-gundam-border;
+        transform: matrix(1.16, 0.01, -0.73, 0.90, 0, 0);
+        background-color: $color-gundam-red-shadow;
+        z-index: $zindex-antenna-holder-bottom + 4;
+      }
+
+      &-part4 {
+        height: 6px;
+        top: 0;
+        left: 20px;
+        border-left: 1px solid $color-gundam-border;
+        transform: matrix(0.75, -1.30, 0.87, 0.50, 0, 0);
+        z-index: $zindex-antenna-holder-bottom + 5;
+      }
+
+      &-part5 {
+        height: 8px;
+        top: 4px;
+        left: 17px;
+        border-left: 1px solid $color-gundam-border;
+        transform: matrix(0.96, -1.15, 0.77, 0.64, 0, 0);
+        z-index: $zindex-antenna-holder-bottom + 6;
+      }
+
+      &-part6 {
+        height: 12px;
+        top: 41px;
+        left: 10px;
+        border-left: 1px solid $color-gundam-border;
+        transform: matrix(0.86, 1.23, -0.82, 0.57, 0, 0);
+        z-index: $zindex-antenna-holder-bottom + 7;
+      }
+
+      &-part7 {
+        width: 11px;
+        height: 4px;
+        top: 60px;
+        left: 14px;
+        border-left: 2px solid $color-gundam-border;
+        border-top: 2px solid $color-gundam-border;
+        transform: matrix(0.73, 0.68, -1.10, 0.34, 0, 0);
+        z-index: $zindex-antenna-holder-bottom + 8;
+      }
+
+      &-part8 {
+        width: 13px;
+        height: 7px;
+        top: 64px;
+        left: 17px;
+        border-right: 2px solid $color-gundam-border;
+        border-top: 2px solid $color-gundam-border;
+        transform: matrix(0.73, 0.68, -0.07, 1.3, -0.2, 0);
+        z-index: $zindex-antenna-holder-bottom + 8;
+      }
+
+      &-part9 {
+        width: 13px;
+        height: 27px;
+        top: 5px;
+        left: 14px;
+        background-color: $color-gundam-red-shadow;
+        z-index: $zindex-antenna-holder-bottom + 1;
+      }
+    }
+
+    &-corner {
+      width: 16px;
+      height: 16px;
+      top: 66px;
+      left: 25px;
+      border-left: 2px solid $color-gundam-border;
+      border-bottom: 2px solid $color-gundam-border;
+      // transform: scale(1) rotate(-45deg) skew(-6deg, -6deg) translate(-0.8px, 0.8px);
+      transform: matrix(0.63, -0.78, 0.63, 0.78, 0, 0.1);
+      background-color: $color-gundam-red-shadow;
+      z-index: $zindex-antenna-holder-bottom - 1;
+    }
+
+    &-middle {
+      height: 24px;
+      top: 62px;
+      left: 33px;
+      border-left: 2px solid $color-gundam-border;
+      z-index: $zindex-antenna-holder-bottom + 11;
+    }
+  }
+}
+
+.forehead {
+  top: 157px;
+  left: 116px;
+
+  &-half {
+    top: 0;
+    left: 0;
+    z-index: $zindex-forehead;
+
+    &--right {
+      transform: scaleX(-1);
+      left: 176px;
+    }
+
+    &-part1 {
+      width: 45px;
+      height: 13px;
+      top: 4px;
+      left: 6px;
+      border-left: 2px solid $color-gundam-border;
+      border-top: 2px solid $color-gundam-border;
+      border-radius: 100% 0 0 0;
+      transform: matrix(0.99, -0.16, -0.80, 1.19, 0, 0);
+      background-color: $color-gundam-white;
+      z-index: $zindex-forehead + 7;
+    }
+
+    &-part2 {
+      width: 80px;
+      height: 24px;
+      top: 23px;
+      left: -1px;
+      border-left: 2px solid $color-gundam-border;
+      border-bottom: 2px solid $color-gundam-border;
+      border-radius: 0 0 0 100%;
+      transform: matrix(1.00, 0.18, 0.49, 1.00, 0, 0);
+      background-color: $color-gundam-white;
+      z-index: $zindex-forehead + 6;
+    }
+
+    &-part3 {
+      width: 19px;
+      height: 16px;
+      top: 13px;
+      left: 31px;
+      border-left: 2px solid $color-gundam-border;
+      border-bottom: 2px solid $color-gundam-border;
+      transform: matrix(0.95, 0.46, 0.45, 1.06, 0, 0);
+      z-index: $zindex-forehead + 10;
+    }
+
+    &-part4 {
+      width: 19px;
+      height: 12px;
+      top: 30px;
+      left: 38px;
+      border-right: 2px solid $color-gundam-border;
+      border-top: 2px solid $color-gundam-border;
+      transform: matrix(0.95, 0.46, 0.45, 1.06, 0, 0);
+      z-index: $zindex-forehead + 11;
+    }
+
+    &-part5 {
+      width: 59px;
+      height: 22px;
+      top: 12px;
+      left: 21px;
+      background-color: $color-gundam-white;
+      z-index: $zindex-forehead + 9;
+    }
+
+    &-part6 {
+      width: 29px;
+      height: 22px;
+      top: 3px;
+      left: 47px;
+      background-color: $color-gundam-white;
+      z-index: $zindex-forehead + 4;
+    }
+
+    &-part7 {
+      width: 10px;
+      height: 23px;
+      top: 32px;
+      left: 79px;
+      border-radius: 3px;
+      background-color: $color-gundam-white;
+      z-index: $zindex-forehead + 5;
+    }
+
+    &-part8 {
+      width: 4px;
+      height: 11px;
+      top: -3px;
+      left: -2px;
+      border: 2px solid $color-gundam-border;
+      transform: matrix(0.83, 0.72, 0.02, 1.05, 0, 0);
+      background-color: $color-gundam-white-shadow;
+      z-index: $zindex-forehead + 14;
+    }
+
+    &-part9 {
+      width: 17px;
+      height: 8px;
+      top: -17px;
+      left: 23px;
+      border-left: 2px solid $color-gundam-border;
+      border-bottom: 2px solid $color-gundam-border;
+      transform: matrix(0.98, 0.28, 0.07, 1.01, 0, 0);
+      background-color: $color-gundam-white;
+      z-index: $zindex-forehead + 12;
+    }
+
+    &-part10 {
+      width: 20px;
+      height: 64px;
+      top: -53px;
+      left: -12px;
+      border-left: 2px solid $color-gundam-border;
+      border-radius: 100%;
+      transform: matrix(1.01, -0.44, 0.04, 1.01, 0, 0);
+      background-color: $color-gundam-white;
+      z-index: $zindex-forehead + 2;
+    }
+
+    &-part11 {
+      width: 10px;
+      height: 9px;
+      top: 7px;
+      left: -7px;
+      border-left: 2px solid $color-gundam-border;
+      transform: matrix(1, 0, 0, 1, -0.3, 0);
+      background-color: $color-gundam-white;
+      z-index: $zindex-forehead + 13;
+    }
+
+    &-part12 {
+      width: 58px;
+      height: 49px;
+      top: -33px;
+      left: -4px;
+      background-color: $color-gundam-white;
+      z-index: $zindex-forehead + 3;
+    }
+
+    &-part13 {
+      width: 18px;
+      height: 20px;
+      top: 0;
+      left: -6px;
+      border-radius: 6px;
+      background-color: $color-gundam-white;
+      z-index: $zindex-forehead + 1;
+    }
+  }
+
+  &-corner {
+    width: 4px;
+    height: 20px;
+    top: 34px;
+    left: 86px;
+    border-bottom: 2px solid $color-gundam-border;
+    border-radius: 0 0 7px 7px;
+    transform: matrix(1, 0, 0, 0.97, 0, 0.7);
+    background-color: $color-gundam-white;
+    z-index: $zindex-forehead + 8;
+  }
+}
+
+.vulcan-cannon {
+  top: 118px;
+  left: 107px;
+  z-index: $zindex-vulcan-cannon;
+
+  &--right {
+    left: 301px;
+    transform: scaleX(-1);
+  }
+
+  &-part1 {
+    width: 24px;
+    height: 37px;
+    top: -3px;
+    left: 2px;
+    border: 2px solid $color-gundam-border;
+    border-radius: 100%;
+    transform: matrix(0.57, -0.84, 0.68, 0.93, 0, 0);
+    background-color: $color-gundam-white-shadow;
+    z-index: $zindex-vulcan-cannon + 1;
+  }
+
+  &-part2 {
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    left: 3px;
+    border: 2px solid $color-gundam-border;
+    border-radius: 100%;
+    background-color: $color-gundam-yellow;
+    z-index: $zindex-vulcan-cannon + 2;
+  }
+
+  &-part3 {
+    width: 12px;
+    height: 12px;
+    top: 10px;
+    left: 8px;
+    border: 2px solid $color-gundam-border;
+    border-radius: 100%;
+    background-color: $color-gundam-yellow-shadow;
+    z-index: $zindex-vulcan-cannon + 2;
+  }
+
+  &-part4 {
+    width: 6px;
+    height: 6px;
+    top: 12px;
+    left: 9px;
+    border: 2px solid $color-gundam-border;
+    border-radius: 100%;
+    background-color: $color-gundam-black;
+    z-index: $zindex-vulcan-cannon + 2;
+  }
+}
+
+.eye {
+  top: 187px;
+  left: 131px;
+  z-index: $zindex-eye;
+
+  .eye-half {
+    &--right {
+      transform: scaleX(-1);
+      left: 146px;
+    }
+
+    &-part1 {
+      width: 28px;
+      height: 15px;
+      top: 8px;
+      left: 17px;
+      border-right: 2px solid $color-gundam-border;
+      border-bottom: 2px solid $color-gundam-border;
+      border-left: 2px solid $color-gundam-border;
+      transform: matrix(1.00, 0.00, 0.84, 1.00, 0, 0);
+      background-color: $color-gundam-yellow;
+      background-clip: content-box;
+      z-index: $zindex-eye + 5;
+    }
+
+    &-part2 {
+      width: 5px;
+      height: 7px;
+      top: 12px;
+      left: 2px;
+      border-top: 2px solid $color-gundam-border;
+      border-right: 2px solid $color-gundam-border;
+      background-color: $color-gundam-red;
+      transform: matrix(0.97, 0.30, 0.32, 1.05, 0, 0);
+      z-index: $zindex-eye + 9;
+    }
+
+    &-part3 {
+      width: 14px;
+      height: 9px;
+      top: 25px;
+      left: 7px;
+      border-top: 2px solid $color-gundam-border;
+      border-right: 2px solid $color-gundam-border;
+      background-color: $color-gundam-red;
+      transform: matrix(0.79, 0.64, 0.02, 1.15, 0, 0);
+      z-index: $zindex-eye + 10;
+    }
+
+    &-part4 {
+      width: 2px;
+      height: 7px;
+      top: 12px;
+      left: 1px;
+      background-color: $color-gundam-red;
+      z-index: $zindex-eye + 6;
+    }
+
+    &-part5 {
+      width: 6px;
+      height: 4px;
+      top: 17px;
+      left: 1px;
+      background-color: $color-gundam-red;
+      z-index: $zindex-eye + 7;
+    }
+
+    &-part6 {
+      width: 9px;
+      height: 12px;
+      top: 20px;
+      left: 1px;
+      background-color: $color-gundam-red;
+      transform: matrix(1.05, 0.04, 0.26, 0.97, 0, 0);
+      z-index: $zindex-eye + 8;
+    }
+
+    &-part7 {
+      width: 32px;
+      height: 11px;
+      top: 30px;
+      left: 20px;
+      border-top: 2px solid $color-gundam-border;
+      border-right: 2px solid $color-gundam-border;
+      background-color: $color-gundam-red;
+      transform: matrix(1.01, 0.05, -0.20, 1.03, 0, 0);
+      z-index: $zindex-eye + 4;
+    }
+
+    &-part8 {
+      width: 20px;
+      height: 13px;
+      top: 36px;
+      left: 26px;
+      background-color: $color-gundam-red;
+      transform: matrix(0.97, -0.43, 0.92, 0.92, 0, 0);
+      z-index: $zindex-eye + 3;
+    }
+
+    &-part9 {
+      width: 28px;
+      height: 14px;
+      top: 28px;
+      left: 47px;
+      border-top: 2px solid $color-gundam-border;
+      background-color: $color-gundam-red;
+      transform: matrix(0.90, -0.44, 0.44, 0.90, 0, 0);
+      z-index: $zindex-eye + 2;
+    }
+
+    &-part10 {
+      width: 22px;
+      height: 18px;
+      top: 3px;
+      left: 1px;
+      background-color: $color-gundam-black;
+      z-index: $zindex-eye + 1;
+    }
+
+    &-part11 {
+      width: 65px;
+      height: 18px;
+      top: 13px;
+      left: 10px;
+      background-color: $color-gundam-black;
+      z-index: $zindex-eye - 1;
+    }
+  }
+
+  &-middle {
+    width: 8px;
+    height: 18px;
+    top: 20px;
+    left: 69px;
+    background-color: $color-gundam-red;
+    z-index: $zindex-eye + 12;
+  }
+}
+
+.chin {
+  top: 217px;
+  left: 135px;
+
+  &-half {
+    z-index: $zindex-chin;
+
+    &--right {
+      transform: scaleX(-1);
+      left: 138px;
+    }
+
+    &-part1 {
+      width: 6px;
+      height: 15px;
+      top: 2px;
+      left: 9px;
+      border-top: 2px solid $color-gundam-border;
+      border-right: 3px solid $color-gundam-border;
+      background-color: $color-gundam-white-shadow;
+      transform: matrix(0.99, 0.19, 1.14, 1.06, 0, 0);
+      z-index: $zindex-chin + 2;
+    }
+
+    &-part2 {
+      width: 5px;
+      height: 11px;
+      top: 6px;
+      left: 6px;
+      border-top: 3px solid $color-gundam-border;
+      border-right: 5px solid $color-gundam-border;
+      transform: matrix(0.87, 0.61, 1, 1.33, -0.4, 0);
+      z-index: $zindex-chin + 4;
+    }
+
+    &-part3 {
+      width: 8px;
+      height: 8px;
+      top: 20px;
+      left: 19px;
+      border-bottom: 2px solid $color-gundam-border;
+      border-left: 2px solid $color-gundam-border;
+      transform: matrix(0.8, -0.3, 0.6, 0.78, 0.3, -0.7);
+      background-clip: padding-box;
+      z-index: $zindex-chin + 7;
+    }
+
+    &-part4 {
+      width: 7px;
+      height: 11px;
+      top: 10px;
+      left: 22px;
+      border-bottom: 2px solid $color-gundam-border;
+      border-left: 2px solid $color-gundam-border;
+      transform: matrix(0.85, -0.26, 0.64, 0.59, -0.3, -0.1);
+      background-clip: padding-box;
+      z-index: $zindex-chin + 11;
+    }
+
+    &-part5 {
+      width: 44px;
+      height: 5px;
+      top: 14px;
+      left: 26px;
+      border-bottom: 2px solid $color-gundam-border;
+      background-color: $color-gundam-white;
+      transform: matrix(0.9, -0.3, 0.45, 0.77, 0, 0.4);
+      z-index: $zindex-chin + 1;
+    }
+
+    &-part6 {
+      width: 20px;
+      height: 5px;
+      top: 11px;
+      left: 29px;
+      border-bottom: 2px solid $color-gundam-border;
+      transform: matrix(0.9, -0.28, 0.3, 0.7, 0, 0.3);
+      z-index: $zindex-chin + 9;
+    }
+
+    &-part7 {
+      width: 20px;
+      height: 5px;
+      top: 5px;
+      left: 47px;
+      border-bottom: 2px solid $color-gundam-border;
+      transform: matrix(0.97, -0.25, 0.3, 0.83, 0, 0.8);
+      z-index: $zindex-chin + 12;
+    }
+
+    &-part8 {
+      width: 0;
+      height: 9px;
+      top: 20px;
+      left: 24px;
+      border-left: 2px solid $color-gundam-border;
+      background-color: $color-gundam-white;
+      transform: matrix(0.93, 0.37, -0.37, 0.93, 0, 0);
+      background-clip: padding-box;
+      z-index: $zindex-chin + 8;
+    }
+
+    &-part9 {
+      width: 41px;
+      height: 44px;
+      top: 27px;
+      left: 23px;
+      border-left: 2px solid $color-gundam-border;
+      background-color: $color-gundam-white;
+      transform: matrix(1.00, -0.05, 0.05, 1.00, 0.5, -0.2);
+      z-index: $zindex-chin + 6;
+    }
+
+    &-part10 {
+      width: 20px;
+      height: 37px;
+      top: 72px;
+      left: 28px;
+      border-left: 2px solid $color-gundam-border;
+      border-bottom: 2px solid $color-gundam-border;
+      border-radius: 0 0 0 100%;
+      background-color: $color-gundam-white;
+      transform: matrix(1.01, 0.14, 0.21, 0.99, 0.8, 0);
+      z-index: $zindex-chin + 13;
+    }
+
+    &-part11 {
+      width: 51px;
+      height: 15px;
+      top: 70px;
+      left: 4px;
+      border-bottom: 2px solid $color-gundam-border;
+      background-color: $color-gundam-white-shadow;
+      transform: matrix(0.67, 0.74, -0.74, 0.67, 0, 0);
+      z-index: $zindex-chin + 3;
+    }
+
+    &-part12 {
+      width: 1px;
+      height: 8px;
+      top: 69px;
+      left: 22px;
+      border: 2px solid $color-gundam-border;
+      background-color: $color-gundam-black;
+      transform: matrix(0.94, 0.38, 0.36, 1.10, 0, 0);
+      z-index: $zindex-chin + 14;
+    }
+
+    &-part13 {
+      width: 14px;
+      height: 4px;
+      top: 26px;
+      left: 52px;
+      border: 2px solid $color-gundam-border;
+      background-color: $color-gundam-black;
+      transform: matrix(0.97, -0.26, 0.00, 1.04, -0.7, 0);
+      z-index: $zindex-chin + 15;
+    }
+
+    &-part14 {
+      width: 14px;
+      height: 4px;
+      top: 39px;
+      left: 52px;
+      border: 2px solid $color-gundam-border;
+      background-color: $color-gundam-black;
+      transform: matrix(0.97, -0.26, 0.00, 1.04, -0.7, 0);
+      z-index: $zindex-chin + 16;
+    }
+
+    &-part15 {
+      width: 25px;
+      height: 48px;
+      top: 55px;
+      left: 43px;
+      border-left: 2px solid $color-gundam-border;
+      border-top: 2px solid $color-gundam-border;
+      border-radius: 100% 0 0 0;
+      background-color: $color-gundam-black;
+      transform: matrix(1, 0, 0, 1, -0.2, 0);
+      z-index: $zindex-chin + 18;
+    }
+
+    &-part16 {
+      width: 12px;
+      height: 11px;
+      top: 100px;
+      left: 43px;
+      border-radius: 0 0 0 100%;
+      background-color: $color-gundam-black;
+      z-index: $zindex-chin + 17;
+    }
+
+    &-part17 {
+      width: 32px;
+      height: 11px;
+      top: 67px;
+      left: 25px;
+      background-color: $color-gundam-white;
+      z-index: $zindex-chin + 5;
+    }
+
+    &-part18 {
+      width: 8px;
+      height: 50px;
+      top: 14px;
+      left: 61px;
+      background-color: $color-gundam-white;
+      z-index: $zindex-chin - 2;
+    }
+
+    &-part19 {
+      width: 42px;
+      height: 8px;
+      top: 15px;
+      left: 25px;
+      background-color: $color-gundam-white;
+      transform: matrix(1.00, -0.29, -0.36, 1.00, 0, 0);
+      z-index: $zindex-chin - 3;
+    }
+
+    &-part20 {
+      width: 17px;
+      height: 47px;
+      top: 18px;
+      left: 7px;
+      background-color: $color-gundam-white-shadow;
+      z-index: $zindex-chin - 4;
+    }
+
+    &-part21 {
+      width: 25px;
+      height: 10px;
+      top: 8px;
+      left: 0;
+      background-color: $color-gundam-white-shadow;
+      transform: matrix(0.74, 0.69, -1.15, 0.14, 0, 0);
+      z-index: $zindex-chin - 5;
+    }
+
+    &-part22 {
+      width: 8px;
+      height: 10px;
+      top: 11px;
+      left: 5px;
+      background-color: $color-gundam-white-shadow;
+      z-index: $zindex-chin - 6;
+    }
+
+    &-part23 {
+      width: 44px;
+      height: 12px;
+      top: 18px;
+      left: 25px;
+      background-color: $color-gundam-white;
+      transform: matrix(0.95, -0.31, 0.31, 0.95, 0, 0);
+      z-index: $zindex-chin - 7;
+    }
+
+    &-part24 {
+      width: 8px;
+      height: 10px;
+      top: 20px;
+      left: 20px;
+      background-color: $color-gundam-white-shadow;
+      transform: matrix(0.91, 0.42, -0.42, 0.91, 0, 0);
+      z-index: $zindex-chin - 8;
+    }
+  }
+
+  &-middle {
+    background-clip: padding-box;
+
+    &-part1 {
+      width: 5px;
+      height: 5px;
+      top: 6px;
+      left: 65px;
+      border-top: 3px solid $color-gundam-border;
+      border-right: 3px solid $color-gundam-border;
+      background-color: $color-gundam-white;
+      transform: matrix(1, -0.3, 1, 0.3, 0, -0.2);
+      z-index: $zindex-chin + 9;
+      background-clip: padding-box;
+    }
+
+    &-part2 {
+      width: 4px;
+      height: 4px;
+      top: 9px;
+      left: 67px;
+      border-bottom: 1px solid $color-gundam-border;
+      background-color: $color-gundam-white;
+      transform: matrix(1, 0, 0, 1, 0, -0.6);
+      z-index: $zindex-chin - 1;
+    }
+  }
+}
+
+.goatee {
+  top: 285px;
+  left: 185px;
+  z-index: $zindex-goatee;
+
+  &-half {
+    &--right {
+      transform: scaleX(-1);
+      left: 38px;
+    }
+
+    &-part1 {
+      width: 16px;
+      height: 41px;
+      top: -1px;
+      left: 8px;
+      border-top: 2px solid $color-gundam-border;
+      border-bottom: 2px solid $color-gundam-border;
+      border-left: 2px solid $color-gundam-border;
+      background-color: $color-gundam-red;
+      z-index: $zindex-goatee + 5;
+    }
+
+    &-part2 {
+      width: 13px;
+      height: 18px;
+      top: 40px;
+      left: 7px;
+      border-bottom: 2px solid $color-gundam-border;
+      border-left: 2px solid $color-gundam-border;
+      background-color: $color-gundam-red-shadow;
+      transform: matrix(1.00, 0.00, -0.18, 1.00, 0, 0);
+      z-index: $zindex-goatee + 4;
+    }
+
+    &-part3 {
+      width: 8px;
+      height: 46px;
+      top: -2px;
+      left: -2px;
+      border-top: 2px solid $color-gundam-border;
+      border-left: 2px solid $color-gundam-border;
+      border-radius: 100% 0 0 0;
+      background-color: $color-gundam-red-shadow;
+      transform: matrix(1.00, 0.03, -0.03, 1.00, 0, 0.8);
+      z-index: $zindex-goatee + 3;
+    }
+
+    &-part4 {
+      width: 16px;
+      height: 17px;
+      top: 38px;
+      left: 1px;
+      border-bottom: 2px solid $color-gundam-border;
+      background-color: $color-gundam-red-shadow;
+      transform: matrix(0.5, 0.8, -0.8, 0.55, -0.2, 0.5);
+      z-index: $zindex-goatee + 2;
+    }
+
+    &-part5 {
+      width: 11px;
+      height: 30px;
+      top: 17px;
+      left: 3px;
+      background-color: $color-gundam-red-shadow;
+      z-index: $zindex-goatee + 1;
+    }
+  }
+}
+
+.ear {
+  top: 79px;
+  left: 61px;
+  z-index: $zindex-ear;
+
+  &--right {
+    transform: scaleX(-1);
+    left: 347px;
+  }
+
+  &-part1 {
+    width: 10px;
+    height: 31px;
+    top: 100px;
+    left: 58px;
+    border-right: 2px solid $color-gundam-border;
+    border-bottom: 2px solid $color-gundam-border;
+    border-left: 2px solid $color-gundam-border;
+    background-color: $color-gundam-white;
+    z-index: $zindex-ear + 3;
+  }
+
+  &-part2 {
+    width: 10px;
+    height: 23px;
+    top: 133px;
+    left: 63px;
+    border-right: 2px solid $color-gundam-border;
+    border-bottom: 2px solid $color-gundam-border;
+    border-left: 2px solid $color-gundam-border;
+    background-color: $color-gundam-white;
+    transform: matrix(1.00, 0.00, 0.40, 1.00, 0, 0);
+    z-index: $zindex-ear + 5;
+  }
+
+  &-part3 {
+    width: 7px;
+    height: 11px;
+    top: 136px;
+    left: 64px;
+    border-top: 2px solid $color-gundam-border;
+    border-right: 2px solid $color-gundam-border;
+    border-bottom: 2px solid $color-gundam-border;
+    background-color: $color-gundam-white-shadow;
+    transform: matrix(1.00, 0.00, 0.40, 1.00, 0.1, 0);
+    z-index: $zindex-ear + 6;
+  }
+
+  &-part4 {
+    width: 10px;
+    height: 74px;
+    top: 156px;
+    left: 68px;
+    border-right: 2px solid $color-gundam-border;
+    border-bottom: 2px solid $color-gundam-border;
+    border-left: 2px solid $color-gundam-border;
+    background-color: $color-gundam-white;
+    transform: matrix(1.00, 0.27, 0.00, 1.00, 0, 0);
+    z-index: $zindex-ear + 4;
+  }
+
+  &-part5 {
+    width: 22px;
+    height: 40px;
+    top: 185px;
+    left: 40px;
+    border-left: 2px solid $color-gundam-border;
+    border-bottom: 2px solid $color-gundam-border;
+    border-radius: 0 0 0 100%;
+    background-color: $color-gundam-white;
+    transform: matrix(1.11, 0.34, 0.21, 0.99, 0.8, 0);
+    z-index: $zindex-ear + 2;
+  }
+
+  &-part6 {
+    width: 26px;
+    height: 52px;
+    top: 154px;
+    left: 31px;
+    border-bottom: 2px solid $color-gundam-border;
+    border-left: 2px solid $color-gundam-border;
+    transform: matrix(1, 0.36, 0, 1, 0, 0);
+    z-index: $zindex-ear + 9;
+  }
+
+  &-part7 {
+    width: 17px;
+    height: 45px;
+    top: 156px;
+    left: 35px;
+    border-right: 2px solid $color-gundam-border;
+    background-color: $color-gundam-black;
+    z-index: $zindex-ear + 10;
+  }
+
+  &-part8 {
+    width: 9px;
+    height: 7px;
+    top: 199px;
+    left: 45px;
+    border-right: 2px solid $color-gundam-border;
+    background-color: $color-gundam-black;
+    transform: matrix(1.00, 0.00, 0.84, 1.00, 0, 0);
+    z-index: $zindex-ear + 11;
+  }
+
+  &-part9 {
+    width: 24px;
+    height: 5px;
+    top: 200px;
+    left: 33px;
+    border-top: 2px solid $color-gundam-border;
+    border-right: 2px solid $color-gundam-border;
+    border-bottom: 2px solid $color-gundam-border;
+    background-color: $color-gundam-white;
+    transform: matrix(1, 0.36, 0, 1, 0, -0.6);
+    z-index: $zindex-ear + 12;
+  }
+
+  &-part10 {
+    width: 20px;
+    height: 2px;
+    top: 176px;
+    left: 34px;
+    border-top: 2px solid $color-gundam-border;
+    border-right: 2px solid $color-gundam-border;
+    border-bottom: 2px solid $color-gundam-border;
+    background-color: $color-gundam-white;
+    z-index: $zindex-ear + 13;
+  }
+
+  &-part11 {
+    width: 25px;
+    height: 6px;
+    top: 148px;
+    left: 31px;
+    border-top: 2px solid $color-gundam-border;
+    border-right: 2px solid $color-gundam-border;
+    border-bottom: 2px solid $color-gundam-border;
+    background-color: $color-gundam-white;
+    z-index: $zindex-ear + 8;
+  }
+
+  &-part12 {
+    width: 2px;
+    height: 48px;
+    top: 152px;
+    left: 33px;
+    background-color: $color-gundam-white;
+    z-index: $zindex-ear + 14;
+  }
+
+  &-part13 {
+    width: 22px;
+    height: 58px;
+    top: 90px;
+    left: 19px;
+    border-left: 3px solid $color-gundam-border;
+    border-bottom: 3px solid $color-gundam-border;
+    border-radius: 0 0 0 100%;
+    background-color: $color-gundam-white;
+    transform: matrix(0.74, 0.82, -0.09, 1.05, 0, 0);
+    z-index: $zindex-ear + 7;
+  }
+
+  &-part14 {
+    width: 13px;
+    height: 34px;
+    top: 94px;
+    left: 34px;
+    background-color: $color-gundam-black;
+    z-index: $zindex-ear + 15;
+  }
+
+  &-part15 {
+    width: 13px;
+    height: 34px;
+    top: 94px;
+    left: 30px;
+    background-color: $color-gundam-black;
+    transform: matrix(1.00, 0.00, 0.06, 1.00, 0, 0);
+    z-index: $zindex-ear + 16;
+  }
+
+  &-part16 {
+    width: 18px;
+    height: 15px;
+    top: 131px;
+    left: 33px;
+    background-color: $color-gundam-black;
+    transform: matrix(1.00, 0.00, 0.25, 1.00, 0, 0);
+    z-index: $zindex-ear + 17;
+  }
+
+  &-part17 {
+    width: 18px;
+    height: 2px;
+    top: 144px;
+    left: 37px;
+    border-top: 2px solid $color-gundam-border;
+    border-right: 2px solid $color-gundam-border;
+    background-color: $color-gundam-white;
+    transform: matrix(1, 0, 0.6, 1, -0.2, 0);
+    z-index: $zindex-ear + 18;
+  }
+
+  &-part18 {
+    width: 12px;
+    height: 3px;
+    top: 126px;
+    left: 37px;
+    border-top: 2px solid $color-gundam-border;
+    border-right: 2px solid $color-gundam-border;
+    border-bottom: 2px solid $color-gundam-border;
+    background-color: $color-gundam-white;
+    transform: matrix(1, 0, 0.6, 1, -0.2, 0);
+    z-index: $zindex-ear + 19;
+  }
+
+  &-part19 {
+    width: 18px;
+    height: 3px;
+    top: 110px;
+    left: 29px;
+    border-top: 2px solid $color-gundam-border;
+    border-right: 2px solid $color-gundam-border;
+    border-bottom: 2px solid $color-gundam-border;
+    background-color: $color-gundam-white;
+    transform: matrix(1, 0, 0.2, 1, -0.2, 0);
+    z-index: $zindex-ear + 20;
+  }
+
+  &-part20 {
+    width: 2px;
+    height: 34px;
+    top: 94px;
+    left: 28px;
+    background-color: $color-gundam-white;
+    transform: matrix(1.00, 0.00, 0.06, 1.00, 0, 0);
+    z-index: $zindex-ear + 21;
+  }
+
+  &-part21 {
+    width: 21px;
+    height: 5px;
+    top: 86px;
+    left: 29px;
+    border-top: 2px solid $color-gundam-border;
+    border-bottom: 2px solid $color-gundam-border;
+    background-color: $color-gundam-white;
+    z-index: $zindex-ear + 22;
+  }
+
+  &-part22 {
+    width: 8px;
+    height: 5px;
+    top: 86px;
+    left: 25px;
+    border-top: 2px solid $color-gundam-border;
+    z-index: $zindex-ear + 23;
+  }
+
+  &-part23 {
+    width: 12px;
+    height: 46px;
+    top: 174px;
+    left: 56px;
+    background-color: $color-gundam-white;
+    z-index: $zindex-ear + 1;
+  }
+
+  &-part24 {
+    width: 39px;
+    height: 38px;
+    top: 7px;
+    left: 27px;
+    border-left: 2px solid $color-gundam-border;
+    border-bottom: 2px solid $color-gundam-border;
+    border-radius: 0 0 0 100%;
+    background-color: $color-gundam-white-shadow;
+    transform: matrix(0.02, 1.02, -0.93, 0.44, 0, 0);
+    z-index: $zindex-ear + 26;
+  }
+
+  &-part25 {
+    width: 9px;
+    height: 21px;
+    top: 58px;
+    left: 16px;
+    border-left: 2px solid $color-gundam-border;
+    border-bottom: 3px solid $color-gundam-border;
+    border-radius: 0 0 0 95%;
+    background-color: $color-gundam-white-shadow;
+    transform: matrix(0.84, 0.99, -0.09, 1.00, 0, 0);
+    z-index: $zindex-ear + 27;
+  }
+
+  &-part26 {
+    width: 15px;
+    height: 17px;
+    top: 58px;
+    left: 22px;
+    border-left: 2px solid $color-gundam-border;
+    background-color: $color-gundam-white-shadow;
+    transform: matrix(0.77, 0.64, -0.64, 0.77, 0, 0);
+    z-index: $zindex-ear + 30;
+  }
+
+  &-part27 {
+    width: 14px;
+    height: 15px;
+    top: 60px;
+    left: 17px;
+    border-radius: 0 0 0 62%;
+    background-color: $color-gundam-white;
+    transform: matrix(0.74, 0.77, -0.06, 1.08, 0, 0);
+    z-index: $zindex-ear + 28;
+  }
+
+  &-part28 {
+    width: 18px;
+    height: 37px;
+    top: 49px;
+    left: 30px;
+    background-color: $color-gundam-white-shadow;
+    z-index: $zindex-ear + 25;
+  }
+
+  &-part29 {
+    width: 18px;
+    height: 12px;
+    top: 74px;
+    left: 23px;
+    border-radius: 6%;
+    background-color: $color-gundam-white-shadow;
+    transform: matrix(1, 0, 0.5, 1, 0.1, 0);
+    z-index: $zindex-ear + 24;
+  }
+
+  &-part30 {
+    width: 12px;
+    height: 14px;
+    top: 67px;
+    left: 22px;
+    background-color: $color-gundam-white-shadow;
+    transform: matrix(1, 0, 0.4, 1, 0.1, 0);
+    z-index: $zindex-ear + 29;
+  }
+}
+
+.back-head {
+  top: 79px;
+  left: 61px;
+  z-index: $zindex-back-head;
+
+  &--right {
+    transform: scaleX(-1);
+    left: 347px;
+  }
+
+  &-part1 {
+    width: 151px;
+    height: 99px;
+    top: 48px;
+    left: -26px;
+    border-left: 2px solid $color-gundam-border;
+    border-bottom: 2px solid $color-gundam-border;
+    border-radius: 0 0 0 77%;
+    background-color: $color-gundam-white;
+    transform: matrix(0.31, 1.02, -0.86, 0.52, 0, 0);
+    z-index: $zindex-back-head + 1;
+  }
+
+  &-part2 {
+    width: 8px;
+    height: 7px;
+    top: 146px;
+    left: 18px;
+    border-top: 3px solid $color-gundam-border;
+    border-right: 2px solid $color-gundam-border;
+    border-bottom: 3px solid $color-gundam-border;
+    border-left: 2px solid $color-gundam-border;
+    background-color: $color-gundam-white-shadow;
+    transform: matrix(1.00, 1.43, 0.00, 1.00, 0, 0);
+    z-index: $zindex-back-head + 2;
+  }
+}
+
+.top-head {
+  top: 36px;
+  left: 111px;
+  width: 182px;
+  height: 165px;
+  border: 2px solid $color-gundam-border;
+  border-radius: 100%;
+  background-color: $color-gundam-white;
+  z-index: $zindex-top-head;
+
+  &-half {
+    &--right {
+      transform: scaleX(-1);
+      left: 182px;
+    }
+
+    &-part1 {
+      width: 14px;
+      height: 6px;
+      top: 43px;
+      left: 2px;
+      border-right: 2px solid $color-gundam-border;
+      border-bottom: 2px solid $color-gundam-border;
+      border-radius: 100% 0 0 0;
+      background-color: $color-gundam-white-shadow;
+      transform: matrix(0.67, -0.77, -0.18, 1.43, 0, 0);
+      z-index: $zindex-top-head + 4;
+    }
+
+    &-part2 {
+      width: 20px;
+      height: 20px;
+      top: 21px;
+      left: 21px;
+      border-top: 3px solid $color-gundam-border;
+      border-left: 3px solid $color-gundam-border;
+      border-radius: 100% 0 0 0;
+      transform: matrix(1.01, -0.09, -0.92, 0.92, 0, 0);
+      z-index: $zindex-top-head + 1;
+    }
+
+    &-part3 {
+      width: 11px;
+      height: 0px;
+      top: 30px;
+      left: 36px;
+      border-bottom: 2px solid $color-gundam-border;
+      transform: matrix(0.57, 0.82, -0.82, 0.57, 0, 0);
+      z-index: $zindex-top-head + 2;
+    }
+
+    &-part4 {
+      width: 20px;
+      height: 20px;
+      top: 20px;
+      left: 41px;
+      border-top: 3px solid $color-gundam-border;
+      border-left: 3px solid $color-gundam-border;
+      border-radius: 100% 0 0 0;
+      transform: matrix(1.21, -0.49, -0.48, 0.90, 0, 0);
+      z-index: $zindex-top-head + 3;
+    }
+
+    &-part5 {
+      width: 9px;
+      height: 24px;
+      top: 8px;
+      left: 45px;
+      background-color: $color-gundam-white;
+      transform: matrix(0.57, 0.82, -0.82, 0.57, 0.2, 0);
+      z-index: $zindex-top-head + 5;
+    }
+
+    &-part6 {
+      width: 9px;
+      height: 24px;
+      top: 32px;
+      left: 30px;
+      background-color: $color-gundam-white;
+      transform: matrix(0.57, 0.82, -0.82, 0.57, 0.2, 0);
+      z-index: $zindex-top-head + 7;
+    }
+
+    &-part7 {
+      width: 17px;
+      height: 49px;
+      top: 15px;
+      left: 76px;
+      background-color: $color-gundam-red;
+      z-index: $zindex-top-head + 10;
+    }
+
+    &-part8 {
+      width: 22px;
+      height: 58px;
+      top: 9px;
+      left: 70px;
+      background-color: $color-gundam-black;
+      z-index: $zindex-top-head + 9;
+    }
+
+    &-part9 {
+      width: 6px;
+      height: 6px;
+      top: 12px;
+      left: 72px;
+      background-color: $color-gundam-black;
+      transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      z-index: $zindex-top-head + 11;
+    }
+
+    &-part10 {
+      width: 6px;
+      height: 6px;
+      top: 61px;
+      left: 72px;
+      background-color: $color-gundam-black;
+      transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      z-index: $zindex-top-head + 12;
+    }
+
+    &-part11 {
+      width: 15px;
+      height: 4px;
+      top: 67px;
+      left: 75px;
+      border-top: 2px solid $color-gundam-border;
+      border-bottom: 2px solid $color-gundam-border;
+      border-left: 2px solid $color-gundam-border;
+      background-color: $color-gundam-white;
+      z-index: $zindex-top-head + 13;
+    }
+
+    &-part12 {
+      width: 3px;
+      height: 2px;
+      top: 63px;
+      left: 70px;
+      border-top: 3px solid $color-gundam-border;
+      border-bottom: 3px solid $color-gundam-border;
+      border-left: 2px solid $color-gundam-border;
+      background-color: $color-gundam-white;
+      transform: matrix(1.00, 1.48, 0.00, 1.00, 0, 0.3);
+      background-clip: padding-box;
+      z-index: $zindex-top-head + 14;
+    }
+
+    &-part13 {
+      width: 6px;
+      height: 9px;
+      top: 5px;
+      left: 67px;
+      background-color: $color-gundam-white;
+      transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      z-index: $zindex-top-head + 16;
+    }
+
+    &-part14 {
+      width: 20px;
+      height: 13px;
+      top: -14px;
+      left: 71px;
+      border-top: 2px solid $color-gundam-border;
+      border-bottom: 2px solid $color-gundam-border;
+      border-left: 2px solid $color-gundam-border;
+      background-color: $color-gundam-white-shadow;
+      transform: matrix(1.00, 0.00, 0.12, 1.00, 0, 0);
+      z-index: $zindex-top-head + 17;
+    }
+
+    &-part15 {
+      width: 15px;
+      height: 6px;
+      top: -3px;
+      left: 60px;
+      border-top: 2px solid $color-gundam-border;
+      border-left: 3px solid $color-gundam-border;
+      background-color: $color-gundam-white;
+      transform: matrix(0.45, -0.92, 0.58, 1.69, -0.5, 0.4);
+      z-index: $zindex-top-head + 16;
+    }
+
+    &-part16 {
+      width: 17px;
+      height: 51px;
+      top: 3px;
+      left: 61px;
+      border-left: 2px solid $color-gundam-border;
+      background-color: $color-gundam-white;
+      transform: matrix(1.00, 0.05, -0.05, 1.00, 0, 0);
+      z-index: $zindex-top-head + 8;
+    }
+
+    &-part17 {
+      width: 0px;
+      height: 56px;
+      top: 14px;
+      left: 66px;
+      border-left: 2px solid $color-gundam-border;
+      z-index: $zindex-top-head + 18;
+    }
+
+    &-part18 {
+      width: 12px;
+      height: 75px;
+      top: -32px;
+      left: 57px;
+      border-top: 3px solid $color-gundam-border;
+      border-left: 2px solid $color-gundam-border;
+      border-radius: 98% 0 0 0;
+      background-color: $color-gundam-white;
+      transform: matrix(1.02, -0.85, -0.02, 1.00, 0, 0);
+      z-index: $zindex-top-head + 6;
+    }
+
+    &-part19 {
+      width: 24px;
+      height: 18px;
+      top: -38px;
+      left: 70px;
+      border-top: 2px solid $color-gundam-border;
+      border-bottom: 2px solid $color-gundam-border;
+      border-left: 2px solid $color-gundam-border;
+      background-color: $color-gundam-white-shadow;
+      transform: matrix(1.00, 0.00, -0.12, 1.00, 0.6, 0);
+      z-index: $zindex-top-head + 19;
+    }
+
+    &-part20 {
+      width: 6px;
+      height: 0px;
+      top: 52px;
+      left: 56px;
+      border-top: 2px solid $color-gundam-border;
+      transform: matrix(0.77, 0.64, -0.71, 0.84, 0.1, -0.2);
+      z-index: $zindex-top-head + 20;
+    }
+
+    &-part21 {
+      width: 21px;
+      height: 0px;
+      top: 78px;
+      left: 73px;
+      border-bottom: 2px solid $color-gundam-border;
+      z-index: $zindex-top-head + 21;
+    }
+
+    &-part22 {
+      width: 11px;
+      height: 15px;
+      top: 52px;
+      left: 62px;
+      border-left: 2px solid $color-gundam-border;
+      transform: matrix(0.96, -0.28, 0.28, 0.96, -0.1, -0.4);
+      z-index: $zindex-top-head + 22;
+    }
+
+    &-part23 {
+      width: 11px;
+      height: 15px;
+      top: 62px;
+      left: 67px;
+      border-left: 2px solid $color-gundam-border;
+      transform: matrix(0.80, -0.60, 0.60, 0.80, 0.3, 0.4);
+      z-index: $zindex-top-head + 23;
+    }
+
+    &-part24 {
+      width: 24px;
+      height: 2px;
+      top: -16px;
+      left: 67px;
+      background-color: $color-gundam-white;
+      z-index: $zindex-top-head + 23;
+    }
+  }
+}

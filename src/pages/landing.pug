@@ -1,0 +1,142 @@
+- var antennaPartsCount = 9;
+- var antennaHolderTopPartsCount = 6;
+- var antennaHolderBottomPartsCount = 9;
+- var foreheadPartsCount = 13;
+- var vulcanCannonPartsCount = 4;
+- var eyePartsCount = 11;
+- var chinPartsCount = 24;
+- var goateePartsCount = 5;
+- var earPartsCount = 30;
+- var backHeadPartsCount = 2;
+- var topHeadPartsCount = 24;
+
+.container
+  .gundam
+    .antenna
+      - for (var i = 1; i <= antennaPartsCount; ++i) {
+        div(class="antenna-part" + i)
+      - }
+
+    .antenna.antenna--right
+      - for (var i = 1; i <= antennaPartsCount; ++i) {
+        div(class="antenna-part" + i)
+      - }
+
+    .antenna-holder
+      .antenna-holder-top-half
+        - for (var i = 1; i <= antennaHolderTopPartsCount; ++i) {
+          div(class="antenna-holder-top-half-part" + i)
+        - }
+
+      .antenna-holder-top-half.antenna-holder-top-half--right
+        - for (var i = 1; i <= antennaHolderTopPartsCount; ++i) {
+          div(class="antenna-holder-top-half-part" + i)
+        - }
+
+      .antenna-holder-top-corner
+      .antenna-holder-top-middle
+
+      .antenna-holder-bottom-half
+        - for (var i = 1; i <= antennaHolderBottomPartsCount; ++i) {
+          div(class="antenna-holder-bottom-half-part" + i)
+        - }
+
+      .antenna-holder-bottom-half.antenna-holder-bottom-half--right
+        - for (var i = 1; i <= antennaHolderBottomPartsCount; ++i) {
+          div(class="antenna-holder-bottom-half-part" + i)
+        - }
+
+      .antenna-holder-bottom-corner
+      .antenna-holder-bottom-middle
+
+    .forehead
+      .forehead-half
+        - for (var i = 1; i <= foreheadPartsCount; ++i) {
+          div(class="forehead-half-part" + i)
+        - }
+
+      .forehead-half.forehead-half--right
+        - for (var i = 1; i <= foreheadPartsCount; ++i) {
+          div(class="forehead-half-part" + i)
+        - }
+
+      .forehead-corner
+
+    .vulcan-cannon
+      - for (var i = 1; i <= vulcanCannonPartsCount; ++i) {
+        div(class="vulcan-cannon-part" + i)
+      - }
+
+    .vulcan-cannon.vulcan-cannon--right
+      - for (var i = 1; i <= vulcanCannonPartsCount; ++i) {
+        div(class="vulcan-cannon-part" + i)
+      - }
+
+    .eye
+      .eye-half
+        - for (var i = 1; i <= eyePartsCount; ++i) {
+          div(class="eye-half-part" + i)
+        - }
+
+      .eye-half.eye-half--right
+        - for (var i = 1; i <= eyePartsCount; ++i) {
+          div(class="eye-half-part" + i)
+        - }
+
+      .eye-middle
+
+    .chin
+      .chin-half
+        - for (var i = 1; i <= chinPartsCount; ++i) {
+          div(class="chin-half-part" + i)
+        - }
+
+      .chin-half.chin-half--right
+        - for (var i = 1; i <= chinPartsCount; ++i) {
+          div(class="chin-half-part" + i)
+        - }
+
+      .chin-middle-part1
+      .chin-middle-part2
+
+    .goatee
+      .goatee-half
+        - for (var i = 1; i <= goateePartsCount; ++i) {
+          div(class="goatee-half-part" + i)
+        - }
+
+      .goatee-half.goatee-half--right
+        - for (var i = 1; i <= goateePartsCount; ++i) {
+          div(class="goatee-half-part" + i)
+        - }
+
+    .ear
+      - for (var i = 1; i <= earPartsCount; ++i) {
+        div(class="ear-part" + i)
+      - }
+
+    .ear.ear--right
+      - for (var i = 1; i <= earPartsCount; ++i) {
+        div(class="ear-part" + i)
+      - }
+
+    .back-head
+      - for (var i = 1; i <= backHeadPartsCount; ++i) {
+        div(class="back-head-part" + i)
+      - }
+
+    .back-head.back-head--right
+      - for (var i = 1; i <= backHeadPartsCount; ++i) {
+        div(class="back-head-part" + i)
+      - }
+
+    .top-head
+      .top-head-half
+        - for (var i = 1; i <= topHeadPartsCount; ++i) {
+          div(class="top-head-half-part" + i)
+        - }
+
+      .top-head-half.top-head-half--right
+        - for (var i = 1; i <= topHeadPartsCount; ++i) {
+          div(class="top-head-half-part" + i)
+        - }
