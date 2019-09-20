@@ -2,7 +2,7 @@
 
 > Draw Gundam (RX-78-2) using CSS3 only.
 
-![Screen Preview](https://github.com/icelam/css3-gundam/raw/master/design/screenshot.png)
+![Screen Preview](https://github.com/icelam/css3-gundam/raw/master/src/assets/images/og/og-image.png)
 
 ### Recommended browser ###
 
