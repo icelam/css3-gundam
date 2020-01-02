@@ -26,3 +26,6 @@ All the build files can be found in `/dist` folder.
 
 * Pug
 * CSS3
+
+## Note
+Credit to [IDBR 1/8](https://www.behance.net/gallery/46455961/Gundam-RX-78)
