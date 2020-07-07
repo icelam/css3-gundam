@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const Webpack = require('webpack');
-const merge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const dotenv = require('dotenv');
 const autoprefixer = require('autoprefixer');
 const baseWebpackConfig = require('./webpack.base.conf');
@@ -15,7 +15,7 @@ const dotenvFiles = [
   path.resolve(__dirname, '../.env.development'),
   path.resolve(__dirname, '../.env.test'),
   path.resolve(__dirname, '../.env')
-].filter(dotenvFile => fs.existsSync(dotenvFile));
+].filter((dotenvFile) => fs.existsSync(dotenvFile));
 
 console.log(`${dotenvFiles[0]} will be used.\n`);
 

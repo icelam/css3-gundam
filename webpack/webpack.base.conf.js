@@ -26,12 +26,22 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new CopyWebpackPlugin([
-      { from: path.resolve(__dirname, '../src/assets/images/og'), to: 'assets/images/og', ignore: ['**/.DS_Store'] },
-      { from: path.resolve(__dirname, '../src/assets/images/touch-icons'), to: 'assets/images/touch-icons', ignore: ['**/.DS_Store'] },
-      { from: path.resolve(__dirname, '../src/assets/images/favicon.ico'), to: 'assets/images/favicon.ico' },
-      { from: path.resolve(__dirname, '../src/manifest.json'), to: 'manifest.json' }
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, '../src/assets/images/og'),
+          to: 'assets/images/og',
+          globOptions: { ignore: ['**/.DS_Store'] }
+        },
+        {
+          from: path.resolve(__dirname, '../src/assets/images/touch-icons'),
+          to: 'assets/images/touch-icons',
+          globOptions: { ignore: ['**/.DS_Store'] }
+        },
+        { from: path.resolve(__dirname, '../src/assets/images/favicon.ico'), to: 'assets/images/favicon.ico' },
+        { from: path.resolve(__dirname, '../src/manifest.json'), to: 'manifest.json' }
+      ]
+    }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../src/index.pug'),
       minify: {
