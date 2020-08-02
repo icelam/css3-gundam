@@ -28,7 +28,7 @@ const clientEnv = getClientEnvironment('development');
 
 module.exports = merge(baseWebpackConfig, {
   mode: 'development',
-  devtool: 'cheap-eval-source-map',
+  devtool: 'inline-source-map',
   output: {
     chunkFilename: 'assets/js/[name].chunk.js'
   },
